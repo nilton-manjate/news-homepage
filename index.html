@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/styles/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
-  <header>
+<body class="font-inter text-[15px] text-darkGrayishBlue grid justify-center">
+  <header class="w-[375px] p-4 mt-7 mb-8 flex justify-between items-center">
     <img src="./assets/images/logo.svg" alt="Logo">
     <img src="./assets/images/icon-menu.svg" alt="Menu icon">
     
-    <nav>
+    <nav class="hidden">
       <a href="#">Home</a>
       <a href="#">New</a>
       <a href="#">Popular</a>
@@ -22,71 +26,76 @@
     </nav>
   </header>
 
-  <section>
-    <h1>The Bright Future of Web 3.0?</h1>
+  <main class="w-[375px] px-4 mb-20">
+    <section class="mb-16">
+      <div class="bg-mobile bg-cover bg-no-repeat h-[300px] mb-7">
+      </div>
 
-    <article>
-      <p>
-        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-        But is it really fulfilling its promise?
-      </p>
+      <h1 class="text-[45px] text-veryDarkBlue leading-[44px] font-bold mb-4">The Bright Future of Web 3.0?</h1>
 
-      <button>Read more</button>
-    </article>
-  </section>
+      <article>
+        <p class="mb-6">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+          But is it really fulfilling its promise?
+        </p>
 
-  <section>
-    <h2>New</h2>
+        <button class="bg-softRed text-offWhite tracking-[4px] h-12 w-[185px]">READ MORE</button>
+      </article>
+    </section>
 
-    <article>
-      <h3>Hydrogen VS Electric Cars</h3>
-      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-    </article>
+    <section class="bg-veryDarkBlue text-offWhite p-6 mb-16">
+      <h2 class="text-2xl text-softOrange font-bold mb-8">New</h2>
 
-    <hr>
+      <article class="grid gap-2">
+        <h3 class="text-xl font-semibold">Hydrogen VS Electric Cars</h3>
+        <p class="text-grayishBlue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
 
-    <article>
-      <h3>The Downsides of AI Artistry</h3>
-      <p>What are the possible adverse effects of on-demand AI image generation?</p>
-    </article>
- 
-    <hr>
+      <hr class="my-8 border-grayishBlue">
 
-    <article>
-      <h3>Is VC Funding Drying Up?</h3>
-      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-    </article>
-  </section>
+      <article class="grid gap-2">
+        <h3 class="text-xl font-semibold">The Downsides of AI Artistry</h3>
+        <p class="text-grayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
+      </article>
 
-  <article>
-    <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+      <hr class="my-8 border-grayishBlue">
+
+      <article class="grid gap-2">
+        <h3 class="text-xl font-semibold">Is VC Funding Drying Up?</h3>
+        <p class="text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </section>
+
+    <article class="flex gap-6 mb-[34px]">
+      <img class="w-[100px] h-[130px]" src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
     
-      <section>
-        <span>01</span>
-        <h3>Reviving Retro PCs</h3>
-        <p>What happens when old PCs are given modern upgrades?</p>
-      </section>
-  </article>
+        <section class="grid justify-between">
+          <span class="text-3xl text-grayishBlue font-bold">01</span>
+          <h3 class="text-lg text-veryDarkBlue font-bold">Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </section>
+    </article>
 
-  <article>
-    <img src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard">
+    <article class="flex gap-6 mb-[34px]">
+      <img class="w-[100px] h-[130px]" src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard">
     
-      <section>
-        <span>02</span>
-        <h3>Top 10 Laptops of 2022</h3>
-        <p>Our best picks for various needs and budgets.</p>
-      </section>
-  </article>
+        <section class="grid justify-between">
+          <span class="text-3xl text-grayishBlue font-bold">02</span>
+          <h3 class="text-lg text-veryDarkBlue font-bold">Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </section>
+    </article>
 
-  <article>
-    <img src="./assets/images/image-gaming-growth.jpg" alt="Game controller">
+    <article class="flex gap-6">
+      <img class="w-[100px] h-[130px]" src="./assets/images/image-gaming-growth.jpg" alt="Game controller">
     
-      <section>
-        <span>03</span>
-        <h3>The Growth of Gaming</h3>
-        <p>How the pandemic has sparked fresh opportunities.</p>
-      </section>
-  </article>
+        <section class="grid justify-between">
+          <span class="text-3xl text-grayishBlue font-bold">03</span>
+          <h3 class="text-lg text-veryDarkBlue font-bold">The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </section>
+    </article>
+  </main>
   
 </body>
 </html>
