@@ -12,90 +12,96 @@
   
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body class="font-inter text-[15px] text-darkGrayishBlue grid justify-center">
-  <header class="w-[375px] p-4 mt-7 mb-8 flex justify-between items-center">
-    <img src="./assets/images/logo.svg" alt="Logo">
-    <img class="cursor-pointer" src="./assets/images/icon-menu.svg" alt="Menu icon">
+<body class="font-inter text-[15px] text-darkGrayishBlue h-screen grid justify-center lg:items-center">
+  <main>
+    <header class="w-[375px] lg:w-[1110px] p-4 lg:p-0 mt-7 lg:mt-0 mb-8 lg:mb-14 flex justify-between items-center">
+      <img src="./assets/images/logo.svg" alt="Logo">
+      <img class="cursor-pointer lg:hidden" src="./assets/images/icon-menu.svg" alt="Menu icon">
     
-    <nav class="hidden">
-      <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Home</a>
-      <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">New</a>
-      <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Popular</a>
-      <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Trending</a>
-      <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Categories</a>
-    </nav>
-  </header>
+      <nav class="hidden font-medium lg:flex gap-10">
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Home</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">New</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Popular</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Trending</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Categories</a>
+      </nav>
+    </header>
 
-  <main class="w-[375px] px-4 mb-20">
-    <section class="mb-16">
-      <div class="bg-mobile bg-cover bg-no-repeat h-[300px] mb-7">
-      </div>
+    <main class="w-[375px] lg:w-[1110px] px-4 lg:px-0 mb-20 lg:mb-0 lg:grid lg:grid-cols-[730px_350px] gap-x-[30px] gap-y-[74px]">
+      <!--First section-->
+      <section class="mb-16 lg:mb-0">
+        <div class="bg-mobile lg:bg-desktop bg-cover bg-no-repeat h-[300px] lg:h-[305px] mb-7 lg:mb-9">
+        </div>
 
-      <h1 class="text-[45px] text-veryDarkBlue leading-[44px] font-bold mb-4">The Bright Future of Web 3.0?</h1>
-
-      <article>
-        <p class="mb-6">
-          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-          But is it really fulfilling its promise?
-        </p>
-
-        <button class="bg-softRed hover:bg-veryDarkBlue duration-500 text-offWhite tracking-[4px] h-12 w-[185px]">READ MORE</button>
-      </article>
-    </section>
-
-    <section class="bg-veryDarkBlue text-offWhite p-6 mb-16">
-      <h2 class="text-2xl text-softOrange font-bold mb-8">New</h2>
-
-      <article class="grid gap-2">
-        <h3 class="text-xl font-semibold hover:text-softOrange hover:cursor-pointer duration-500">Hydrogen VS Electric Cars</h3>
-        <p class="text-grayishBlue">Will hydrogen-fueled cars ever catch up to EVs?</p>
-      </article>
-
-      <hr class="my-8 border-grayishBlue">
-
-      <article class="grid gap-2">
-        <h3 class="text-xl font-semibold hover:text-softOrange hover:cursor-pointer duration-500">The Downsides of AI Artistry</h3>
-        <p class="text-grayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
-      </article>
-
-      <hr class="my-8 border-grayishBlue">
-
-      <article class="grid gap-2">
-        <h3 class="text-xl font-semibold hover:text-softOrange hover:cursor-pointer duration-500">Is VC Funding Drying Up?</h3>
-        <p class="text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </article>
-    </section>
-
-    <article class="flex gap-6 mb-[34px]">
-      <img class="w-[100px] h-[130px]" src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
+        <div class="lg:grid grid-cols-2 gap-8">
+          <h1 class="text-[45px] lg:text-[58px] text-veryDarkBlue leading-[44px] lg:leading-[57px] font-bold mb-4 lg:mb-0">The Bright Future of Web 3.0?</h1>
     
-        <section class="grid justify-between">
-          <span class="text-3xl text-grayishBlue font-bold">01</span>
-          <h3 class="text-lg text-veryDarkBlue hover:text-softRed hover:cursor-pointer duration-500 font-bold">Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </section>
-    </article>
-
-    <article class="flex gap-6 mb-[34px]">
-      <img class="w-[100px] h-[130px]" src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard">
+          <article class="lg:grid lg:gap-10">
+            <p class="mb-6 lg:mb-0">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
     
-        <section class="grid justify-between">
-          <span class="text-3xl text-grayishBlue font-bold">02</span>
-          <h3 class="text-lg text-veryDarkBlue hover:text-softRed hover:cursor-pointer duration-500 font-bold">Top 10 Laptops of 2022</h3>
-          <p>Our best picks for various needs and budgets.</p>
-        </section>
-    </article>
+            <button class="bg-softRed hover:bg-veryDarkBlue duration-500 text-offWhite tracking-[4px] h-12 w-[185px]">READ MORE</button>
+          </article>
+        </div>
+      </section>
 
-    <article class="flex gap-6">
-      <img class="w-[100px] h-[130px]" src="./assets/images/image-gaming-growth.jpg" alt="Game controller">
+      <!--NEW section-->
+      <section class="bg-veryDarkBlue text-offWhite p-6 lg:px-[26px] lg:py-8 mb-16 lg:mb-0">
+        <h2 class="text-2xl lg:text-4xl text-softOrange font-bold mb-8 lg:mb-9">New</h2>
+
+        <article class="grid gap-2 lg:gap-3">
+          <h3 class="text-xl font-semibold hover:text-softOrange hover:cursor-pointer duration-500">Hydrogen VS Electric Cars</h3>
+          <p class="text-grayishBlue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+
+        <hr class="my-8 border-darkGrayishBlue">
+
+        <article class="grid gap-2 lg:gap-3">
+          <h3 class="text-xl font-semibold hover:text-softOrange hover:cursor-pointer duration-500">The Downsides of AI Artistry</h3>
+          <p class="text-grayishBlue">What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+
+        <hr class="my-8 border-darkGrayishBlue">
+
+        <article class="grid gap-2 lg:gap-3">
+          <h3 class="text-xl font-semibold hover:text-softOrange hover:cursor-pointer duration-500">Is VC Funding Drying Up?</h3>
+          <p class="text-grayishBlue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+      </section>
+
+      <!--01 02 03-->
+      <section class="lg:col-span-3 lg:flex lg:justify-between lg:w-[1110px]">
+        <article class="flex gap-6 mb-[34px]">
+          <img class="w-[100px] h-[130px]" src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs">
     
-        <section class="grid justify-between">
-          <span class="text-3xl text-grayishBlue font-bold">03</span>
-          <h3 class="text-lg text-veryDarkBlue hover:text-softRed hover:cursor-pointer duration-500 font-bold">The Growth of Gaming</h3>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </section>
-    </article>
+            <section class="grid justify-between lg:w-[220px] lg:h-[130px]">
+              <span class="text-3xl text-grayishBlue font-bold">01</span>
+              <h3 class="text-lg text-veryDarkBlue hover:text-softRed hover:cursor-pointer duration-500 font-bold">Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </section>
+        </article>
+        <article class="flex gap-6 mb-[34px]">
+          <img class="w-[100px] h-[130px]" src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard">
+    
+            <section class="grid justify-between lg:w-[220px] lg:h-[130px]">
+              <span class="text-3xl text-grayishBlue font-bold">02</span>
+              <h3 class="text-lg text-veryDarkBlue hover:text-softRed hover:cursor-pointer duration-500 font-bold">Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </section>
+        </article>
+        <article class="flex gap-6">
+          <img class="w-[100px] h-[130px]" src="./assets/images/image-gaming-growth.jpg" alt="Game controller">
+    
+            <section class="grid justify-between lg:w-[220px] lg:h-[130px]">
+              <span class="text-3xl text-grayishBlue font-bold">03</span>
+              <h3 class="text-lg text-veryDarkBlue hover:text-softRed hover:cursor-pointer duration-500 font-bold">The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </section>
+        </article>
+      </section>
+    </main>
   </main>
-  
 </body>
 </html>

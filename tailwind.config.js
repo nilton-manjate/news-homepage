@@ -14,7 +14,7 @@ module.exports = {
 
       backgroundImage: {
         'mobile': "url('../images/image-web-3-mobile.jpg')",
-        'desktop': "url('../images/image-web-3-desktop.jpg'"
+        'desktop': "url('../images/image-web-3-desktop.jpg')"
       },
 
       fontFamily: {
