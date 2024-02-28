@@ -855,6 +855,21 @@ video {
   color: hsl(5 85% 63% / var(--tw-text-opacity));
 }
 
+.focus\:bg-veryDarkBlue:focus {
+  --tw-bg-opacity: 1;
+  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
+}
+
+.focus\:text-softRed:focus {
+  --tw-text-opacity: 1;
+  color: hsl(5 85% 63% / var(--tw-text-opacity));
+}
+
+.focus\:text-softOrange:focus {
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
