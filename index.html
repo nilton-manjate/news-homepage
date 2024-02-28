@@ -15,10 +15,18 @@
 <body class="font-inter text-[15px] text-darkGrayishBlue h-screen grid justify-center lg:items-center">
   <main>
     <header class="w-[375px] lg:w-[1110px] p-4 lg:p-0 mt-7 lg:mt-0 mb-8 lg:mb-14 flex justify-between items-center">
-      <img src="./assets/images/logo.svg" alt="Logo">
-      <img class="cursor-pointer lg:hidden" src="./assets/images/icon-menu.svg" alt="Menu icon">
+      <img id="logo" src="./assets/images/logo.svg" alt="Logo">
+      <img id="menuButton" class="cursor-pointer lg:hidden z-50" src="./assets/images/icon-menu.svg" alt="Menu icon">
     
       <nav class="hidden font-medium lg:flex gap-10">
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Home</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">New</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Popular</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Trending</a>
+        <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Categories</a>
+      </nav>
+
+      <nav id="slideNav" class="lg:hidden z-20 w-0 duration-500 bg-offWhite text-veryDarkBlue absolute font-extrabold top-0 right-0 grid gap-8 pt-40 pl-8 pb-96">
         <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Home</a>
         <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">New</a>
         <a class="hover:cursor-pointer hover:text-softRed duration-500" href="#">Popular</a>
@@ -103,5 +111,6 @@
       </section>
     </main>
   </main>
+  <script src="./assets/scripts/menu.js"></script>
 </body>
 </html>
